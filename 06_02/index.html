@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Accessible multi-level nav menu</title>
+  </head>
+  <body>
+    <nav id="navigation" class="main-nav">
+      <a href="#main" class="skip-link">Skip navigation</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="has-sub-menu">
+          <button class="menu-trigger">News</button>
+          <ul class="sub-menu">
+            <li><a href="/recent">Recent news</a></li>
+            <li><a href="/local">Local news</a></li>
+            <li><a href="/international">International news</a></li>
+            <li><a href="/space">Space news</a></li>
+            <li><a href="/good">Good news</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+        <li class="has-sub-menu">
+          <button class="menu-trigger">Another</button>
+          <ul class="sub-menu">
+            <li><a href="/recent">Something</a></li>
+            <li><a href="/local">Else</a></li>
+            <li><a href="/international">Entirely</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="main">
+      <h1>A dropdown menu</h1>
+      <p>
+        This is an example of a basic multi-level navigation menu with
+        accessibility built in.
+      </p>
+      <p>
+        Tabbing through the menu, you find links to top-level links, and buttons
+        to open sub-level menus.
+      </p>
+      <p>
+        When you tab out of the sub-level menu, it automatically closes and
+        focus is sent to the next focusable item, either in the menu or in the
+        document.
+      </p>
+    </main>
+  </body>
+</html>

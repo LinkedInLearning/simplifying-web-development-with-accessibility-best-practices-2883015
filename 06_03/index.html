@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Basic card with hidden text</title>
+  </head>
+  <body class="sr">
+    <ul class="card-list">
+      <li class="card">
+        <a href="#">
+          <img src="images/cal.png" alt="" />
+          <h2>First card<span class="sr-only"> continue reading</span></h2>
+          <p aria-hidden="true">
+            Once upon a time there was a card. The card had two friends.
+          </p>
+        </a>
+      </li>
+      <li class="card">
+        <a href="#">
+          <img src="images/mega.png" alt="" />
+          <h2>The Middle Card<span class="sr-only"> continue reading</span></h2>
+          <p aria-hidden="true">
+            The middle card always wanted to be in the middle of the pack.
+          </p>
+        </a>
+      </li>
+      <li class="card">
+        <a href="#">
+          <img src="images/phones.png" alt="" />
+          <h2>
+            The Last Card In the Group<span class="sr-only">
+              continue reading</span
+            >
+          </h2>
+          <p aria-hidden="true">
+            The last card was always last, even when the text direction was set
+            to RTL.
+          </p>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  border: 0;
+  background: none;
+}
+
+button:hover {
+  /* Mouse behavior like link */
+  cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background: none;
+  border-color: inherit;
+  border-radius: 0;
+}

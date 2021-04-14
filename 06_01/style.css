@@ -1,0 +1,95 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  border: 0;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background: none;
+  border-color: inherit;
+  border-radius: 0;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 1.375em;
+}
+
+.main-nav {
+  position: relative;
+  width: fit-content;
+}
+
+.main-nav ul {
+  position: absolute;
+  max-width: fit-content;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a,
+.menu-trigger {
+  display: block;
+  margin-block-end: 1ch;
+  margin-inline-end: 1ch;
+  padding: 0.3rem 0.5rem;
+  border: 3px solid black;
+  color: black;
+  text-decoration: none;
+  background: white;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.menu-trigger:hover,
+.menu-trigger:focus {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.main-nav ul.hide {
+  display: none;
+}

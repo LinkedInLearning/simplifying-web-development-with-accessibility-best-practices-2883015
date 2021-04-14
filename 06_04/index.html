@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Advanced card with multiple internal links</title>
+  </head>
+  <body>
+    <ul class="card-list">
+      <li class="card">
+        <img src="images/cal.png" alt="" />
+        <ul class="eyebrow">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Interesting</a></li>
+        </ul>
+        <h2>
+          <a href="#">First card<span class="sr-only"> read more</span></a>
+        </h2>
+        <p>Once upon a time there was a card. The card had two friends.</p>
+      </li>
+      <li class="card">
+        <img src="images/mega.png" alt="" />
+        <ul class="eyebrow">
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Info</a></li>
+        </ul>
+        <h2>
+          <a href="#">The Middle Card<span class="sr-only"> read more</span></a>
+        </h2>
+        <p>The middle card always wanted to be in the middle of the pack.</p>
+      </li>
+      <li class="card">
+        <img src="images/phones.png" alt="" />
+        <ul class="eyebrow">
+          <li><a href="#">Taxonomy</a></li>
+          <li><a href="#">Term</a></li>
+        </ul>
+        <h2>
+          <a href="#"
+            >The Last Card In the Group<span class="sr-only">
+              read more</span
+            ></a
+          >
+        </h2>
+        <p>
+          The last card was always last, even when the text direction was set to
+          RTL.
+        </p>
+        <p class="readmore">
+          <a href="#" aria-hidden="true" tabindex="-1">Read more</a>
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Accessible mobile hamburger menu</title>
+  </head>
+  <body>
+    <nav id="navigation" class="main-nav">
+      <button class="menu-trigger">
+        <svg class="icon" viewBox="0 0 44 32">
+          <path
+            d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"
+          ></path>
+          <path d="M31 14l6 6 6-6z"></path>
+        </svg>
+        <span class="sr-only">Main menu</span>
+      </button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>A mobile navigation menu</h1>
+      <p>
+        This is an example of a basic mobile navigation menu with accessibility
+        built in.
+      </p>
+      <p>
+        When you tab out of the menu, it automatically closes and focus is sent
+        to the <a href="#">next focusable item</a>, the link inside this
+        paragraph.
+      </p>
+    </main>
+  </body>
+</html>
